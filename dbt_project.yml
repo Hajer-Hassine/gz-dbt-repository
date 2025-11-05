@@ -42,4 +42,4 @@ models:
       +materialized: table
   gz-dbt-repository:  
     mart:
-      +materialized:table 
+      +materialized: table 

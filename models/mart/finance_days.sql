@@ -1,4 +1,3 @@
-{{ config(materialized="table") }}
 SELECT date_date,
 COUNT(orders_id) AS number_of_transactions,
 ROUND(SUM(revenue),2) AS revenue,

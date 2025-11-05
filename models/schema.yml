@@ -151,9 +151,58 @@ models:
         description: nombre d'impression
       - name: clik
         description: nombre de click
-       
 
-            
+models:
+  - name: int_campaigns_day
+    description: analyse des campagnes par jour
+    columns :
+      - name: date_date
+        description: date de la campagne
+        tests:
+          - not_null
+          - unique
+      - name: ads_cost
+        description: coût de la campagne
+      - name: impressions
+        description: nombre d'impression
+      - name: clik
+        description: nombre de click
+
+models:
+  - name: finance_campaign_day
+    description : analyse du budget des campagnes    
+    colums :
+      - name: date_date
+        description: date 
+        tests:
+          - not_null
+          - unique
+      - name: ads_margin
+        description: marge de la campagne
+      - name: average_basket
+        description: panier moyen 
+      - name: operational_margin
+        description: marhe operationnel
+      - name: ads_cost
+        description : cout publicitaire
+      - name: ads_impression
+        description: nombre d'impression par jour
+      - name: ads_clicks
+        description: nombre de clicks
+      - name: quantity
+        description : nombre de produits vendu
+      - name: revenue
+        description: CA généré
+      - name: purchase_cost
+        description : cout d'achat
+      - name: margin
+        description : marge
+      - name: shipping_fee
+        description: frais de livraison
+      - name: log_cost
+        description: cout de logistique
+      - name: ship_cost
+        description : cout de livraison
      
             
      
